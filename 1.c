@@ -7,7 +7,7 @@
 int main() {
     FILE* file = fopen("file.txt", "w");
     if (file == NULL) {
-        perror(fopen);
+        perror("fopen");
         exit(1);
     }
     int flag = 0;
