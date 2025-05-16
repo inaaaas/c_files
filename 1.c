@@ -12,7 +12,7 @@ int main() {
     }
     int flag = 0;
     for (int i = 1; i <= 15; ++i) {
-        for (int j = 2; j <= i/2; ++j) {
+        for (int j = 2; j * j <= i; ++j) { //j <= i/2 wastefull
             if ( i % j == 0) {
                 flag = 1;
                 break;  
