@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <fcntl.h>
+#include <stdlib.h>
 
 int main() {
     FILE* file = fopen("file2.txt", "w");
