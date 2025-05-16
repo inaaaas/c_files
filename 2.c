@@ -8,7 +8,7 @@
 int main() {
     FILE* file = fopen("file2.txt", "w");
     if (file == NULL) {
-        perror(fopen);
+        perror("fopen");
         exit(1);
     }
     int num = 0;
