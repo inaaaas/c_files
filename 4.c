@@ -18,8 +18,8 @@ int main() {
         sum += number;
         ++count;
     }
-    int average = sum / count;
-    fprintf(file, "\nAverage is %d", average);
+    double average = (double)sum / count;
+    fprintf(file, "\nAverage is %.2f", average);
     fclose(file);
     return 0;
 }
