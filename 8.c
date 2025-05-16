@@ -53,7 +53,7 @@ int main() {
 
     char* buffer = malloc((size + 1) * sizeof(char));
     fread(buffer, 1, size, file);
-    buffer[size] = '\n';
+    buffer[size] = '\0';
 
     char* token = strtok(buffer, " \n\t");
     Tokens tokens[MAX_WORD_COUNT] = {0};
