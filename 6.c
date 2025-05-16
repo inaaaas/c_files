@@ -20,6 +20,8 @@ int main() {
     int lineCount = 0;
     int wordCount = 0;
     int wordStart = 0;
+
+    int prev = 0;
     while ((ch = fgetc(file)) != EOF) {
         ++byteCount;
         if (ch == '\n') {
@@ -32,9 +34,10 @@ int main() {
             ++wordCount;
             wordStart = 1;
         }
+        prev = ch;
     }
     
-    if (byteCount > 0 && ch != '\n') {
+    if (byteCount > 0 && prev != '\n') {
         ++lineCount;
     }
     
