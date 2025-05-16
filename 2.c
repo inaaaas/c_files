@@ -14,7 +14,7 @@ int main() {
     int num = 0;
     printf("Enter the numbers , which you want include to file \nEnter Q ,if you want to stop\n");
 
-    while (scanf("%d", &num) != 0) {
+    while (scanf("%d", &num) == 1) {
         fprintf(file, "%d ", num);
     }
     fclose(file);
